@@ -1,16 +1,5 @@
 # INTRODUCTION 
-This project focuses on semantic segmentation, addressing both binary and multiclass segmentation 
-tasks. Using the DeepLabV3 model with a ResNet-101 backbone, the goal was to classify each pixel 
-in an image as belonging to specific object classes or background. For binary segmentation, the model 
-distinguishes between a single object and the background, while in multiclass segmentation, it handles 
-multiple object classes within the image. The model was pre-trained on the COCO 2017 dataset and 
-fine-tuned for these tasks. The pipeline includes image preprocessing, model inference, and 
-performance evaluation using metrics such as Pixel Accuracy, IoU, F1 Score, and MSE. The final 
-model demonstrated strong performance, with high pixel accuracy and a balanced F1 score, indicating 
-reliable segmentation. However, the results also highlighted areas for improvement, particularly in 
-distinguishing similar classes and handling object boundaries. This project not only showcases the 
-potential of deep learning for semantic segmentation but also opens up opportunities for further 
-enhancements using more advanced architectures and techniques. 
+This project focuses on semantic segmentation, addressing both binary and multiclass segmentation tasks. Using the DeepLabV3 model with a ResNet-101 backbone, the goal was to classify each pixel in an image as belonging to specific object classes or background. For binary segmentation, the model distinguishes between a single object and the background, while in multiclass segmentation, it handles multiple object classes within the image. The model was pre-trained on the COCO 2017 dataset and fine-tuned for these tasks. The pipeline includes image preprocessing, model inference, and performance evaluation using metrics such as Pixel Accuracy, IoU, F1 Score, and MSE. The final model demonstrated strong performance, with high pixel accuracy and a balanced F1 score, indicating reliable segmentation. However, the results also highlighted areas for improvement, particularly in distinguishing similar classes and handling object boundaries. This project not only showcases the potential of deep learning for semantic segmentation but also opens up opportunities for further enhancements using more advanced architectures and techniques. 
 # METHODS USED 
 ## 1. Deep Learning for Semantic Segmentation: 
 o Utilizes the DeepLabV3 model with a ResNet-101 backbone, designed for accurate 
@@ -92,10 +81,13 @@ o scikit-learn: For calculating F1 Score.
 • Model: DeepLabV3 with ResNet-101 backbone for binary and multiclass segmentation.
 # Results
 ## Binary Semantic Segmentation
+![Binary](https://github.com/SakshiBiyani02/Image_segmentation/blob/main/Screenshot%202025-02-21%20120213.png?raw=true)
+![Binary](https://github.com/SakshiBiyani02/Image_segmentation/blob/main/Screenshot%202025-02-21%20120127.png?raw=true)
 ## Multiclass Semantic Segmentation
+![Multiclass](https://github.com/SakshiBiyani02/Image_segmentation/blob/main/multiclass.png?raw=true)
 # Interpretation of Results 
 ## 1. Pixel Accuracy (0.9405): 
-o The model achieved a high pixel accuracy of 94.05%, indicating that it correctly 
+The model achieved a high pixel accuracy of 94.05%, indicating that it correctly 
 classified a large majority of pixels in the images. This reflects good overall 
 performance and suggests that the model effectively segments major classes in the 
 dataset. 
@@ -126,7 +118,7 @@ The application of the DeepLabV3 model with a ResNet-101 backbone demonstrated s
 performance in segmenting images from the COCO dataset, with a high pixel accuracy and a balanced 
 F1 score. The use of pre-trained weights and atrous convolutions helped in capturing fine details and 
 segmenting objects at multiple scales. 
-Key Takeaways: 
+# Key Takeaways: 
 1. Robust Performance: The model achieved good segmentation accuracy, handling complex 
 scenes and a wide variety of objects in the COCO dataset. 
 2. Effectiveness of DeepLabV3: The use of atrous convolutions and a deep residual network 
